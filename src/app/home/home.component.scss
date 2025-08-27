@@ -1,0 +1,21 @@
+.glass-card {
+  background: rgba(255, 255, 255, 0.15); // Transparent
+  border-radius: 1rem;
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  .card-body {
+    color: #fff; // makes text readable on glass
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.shape-greenyellowblue {
+  background: linear-gradient(135deg, #3ed3ba, #2b94df, #191e8b);
+}
