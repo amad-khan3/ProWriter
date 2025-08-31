@@ -1,7 +1,7 @@
 <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
   <div class="container">
-    <a class="navbar-brand mr-lg-5" [routerLink]="['/home']">
-      <img src="./assets/img/brand/argon-white.png">
+    <a class="navbar-brand mr-lg-5" style="font-size: 2rem;" [routerLink]="['/home']">
+      ProWriters
     </a>
     <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
           [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
@@ -65,13 +65,16 @@
         <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text">Examples</span>
+            <span class="nav-link-inner--text">Pages</span>
           </a>
           <div class="dropdown-menu">
-            <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>
-            <a [routerLink]="['/user-profile']" class="dropdown-item">Profile</a>
-            <a [routerLink]="['/login']" class="dropdown-item">Login</a>
-            <a [routerLink]="['/register']" class="dropdown-item">Register</a>
+            <a [routerLink]="['/ghostwriting']" class="dropdown-item">Books & E-Books</a>
+            <a [routerLink]="['/ghostwriting']" class="dropdown-item">Ghostwriting</a>
+            <a [routerLink]="['/website-copy']" class="dropdown-item">Website Copy</a>
+            <a [routerLink]="['/seo-content']" class="dropdown-item">SEO Content</a>
+            <a [routerLink]="['/blog-articles']" class="dropdown-item">Blogs</a>
+            <a [routerLink]="['/speech-writing']" class="dropdown-item">Speech</a>
+            <a [routerLink]="['/about']" class="dropdown-item">About</a>
           </div>
         </li>
       </ul>
@@ -94,18 +97,18 @@
             <span class="nav-link-inner--text d-lg-none">Twitter</span>
           </a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial/argon-design-system-angular?ref=adsa-navbar" target="_blank" data-toggle="tooltip" title="Star us on Github">
             <i class="fa fa-github"></i>
             <span class="nav-link-inner--text d-lg-none">Github</span>
           </a>
-        </li>
+        </li> -->
         <li class="nav-item d-none d-lg-block ml-lg-4">
           <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-navbar" target="_blank" class="btn btn-neutral btn-icon">
             <span class="btn-inner--icon">
-              <i class="fa fa-cloud-download mr-2"></i>
+              <i class="ni ni-money-coins mr-2"></i>
             </span>
-            <span class="nav-link-inner--text">Download</span>
+            <span class="nav-link-inner--text">GET A QUOTE</span>
           </a>
         </li>
       </ul>

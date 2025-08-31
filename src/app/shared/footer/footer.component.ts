@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class FooterComponent implements OnInit {
     test : Date = new Date();
-
+    currentYear = new Date().getFullYear();
     constructor(private router: Router ) {}
 
     ngOnInit() {
